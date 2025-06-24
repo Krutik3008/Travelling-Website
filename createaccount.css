@@ -1,0 +1,97 @@
+body {
+    margin: 0%;
+    padding: 0%;
+   background-image: url(4.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 90vh;
+   font-family: sans-serif ;
+}
+
+.login{
+    width: 250px;
+    height: 500px;
+    background-color: blueviolet;
+    color: aliceblue;
+    top: 10%;
+    left: 40%;
+    position: absolute;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 40px 25px;
+
+}
+
+ h1{
+    margin:0;
+    padding: 0 0 25 ;
+    text-align: center ;
+    font-size: 32px;
+}
+
+ h1 {
+    background-color: orange;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 6px;    
+}
+
+p{
+    color: black;
+    text-align: center;
+} 
+
+ input[ type ="text"] , input[type="number"] , input[type="email"] , input[type="date"]
+{
+    border: none;
+    border-bottom: 2px solid azure;
+    background: transparent;
+    color: azure;
+    position: center;
+    text-align: center;
+    outline: none;
+    height: 20px ;
+    font-size: 18px;
+   
+}
+
+
+
+.login input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height:30px;
+    color: aliceblue;
+    background: blueviolet;
+    font-size: 20px ;
+    border-radius: 20px;
+
+}
+
+ input[type="submit"]:hover
+  {
+      cursor: pointer;
+      background-color: aliceblue;
+      color: blueviolet;
+      font-weight: bold;
+      position: center;
+
+  }
+
+ a  {
+    text-decoration: none;
+    background-color: none;
+    color: rgb(143, 255, 5);
+    background-color: blueviolet;
+    font-size: 20px;
+    border-radius: 8px;
+    border-bottom: 2px solid azure;
+}
+
+ a:hover
+{
+    color: blueviolet ;
+
+    background-color: greenyellow;
+}

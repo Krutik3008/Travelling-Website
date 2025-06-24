@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,500&display=swap');
+
+
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .flex-container {
+            /* max-width: 1200px; */
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: none;   
+
+        }
+        .card {
+            margin: 10px;
+            flex-basis: 300px;  
+            border: none;
+            overflow: hidden;
+        }
+        img{
+            height: 200px;
+            width:auto;
+            border-radius: 5px;
+            transition: all 2s ease;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+        }
+
+        .container-fluid{
+            background-color:lightgreen ;
+           
+        } 
+        .btn-btn-outline-success{
+            background-color: rgb(247, 235, 235);
+        }
+       h2{
+            text-align: center;
+            font-size: 30px;
+            color:#E7B10A;
+            font-family: 'Sofia Sans Condensed', sans-serif;
+            background-color: lightgoldenrodyellow;
+            margin: 0%;
+
+        } 
+
+        .name{
+            position: absolute;
+            color: white;
+            left: 10px;
+            bottom: 7px;
+            font-size: 20px;
+        }
+
+        .sec1{
+            background: url(https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Travel & turism</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration form.html">sign up</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  booking app
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.makemytrip.com/flights/?gclid=CjwKCAjw586hBhBrEiwAQYEnHS3Xgd3gmDwVA9YfBKTT-DALUkLw-0zWLciFM87BRezpDG6A77B8kxoCrugQAvD_BwE&cmp=SEM|D|DF|G|Generic|DF_Generic_Exact|Tickets_Exact|ETA|Regular|274019538949&s_kwcid=AL!1631!3!274019538949!e!!g!!travel%20booking&ef_id=CjwKCAjw586hBhBrEiwAQYEnHS3Xgd3gmDwVA9YfBKTT-DALUkLw-0zWLciFM87BRezpDG6A77B8kxoCrugQAvD_BwE:G:s">makemytrip</a></li>
+                  <li><a class="dropdown-item" href="https://www.goibibo.com/">goibibo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.redbus.in/bus-tickets">red bus</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/KRUTIK/wd%20project/login.html">login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn-btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!-- home page -->
+    <h2><b>Famous and Visited place in India</b></h2>
+    <section class="flex-container sec1">
+        
+            <div class="card" >
+                <img src="https://www.visittnt.com/images/info/gomateshwara-statue.jpg" >
+                <div class="name yellow">
+                    Gomateshwara
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/1280px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg" style="width:100%;">  
+                </a>
+                <div class="name">
+                    Taj Mahal   
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.visittnt.com/images/info/hampi.jpg">
+                <div class="name">
+                     
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.visittnt.com/images/info/golden-temple.jpg">
+                <div class="name">
+                     
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.visittnt.com/images/info/konark-sun-temple.jpg">
+                <div class="name">
+                     
+                </div>
+            </div>   
+            <div class="card">
+                <img src="https://www.visittnt.com/images/info/nalanda-university-bihar.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.visittnt.com/images/info/khajuraho.jpg">
+                <div class="name">
+                     
+                </div>
+            </div>   
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-new-delhi.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mumbai.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-rajasthan.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-rishikesh.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-varanasi.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-goa.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-kerala.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-ajanta-ellora-caves.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-darjeeling.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-kolkata.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-ahmedabad.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-shimla.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mysore.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2022/03/india-best-places-to-visit-ladakh.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2022/03/india-best-places-to-visit-manali.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2022/03/india-best-places-to-visit-kodagu-abbey-falls.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2022/03/india-best-places-to-visit-andaman-islands-elephant-beach.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.planetware.com/wpimages/2022/03/india-best-places-to-visit-mcleod-ganj.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://c.myholidays.com/packages/8e897b20-498b-4503-b498-c6257bb74269/original/fb291329-b91d-4b30-8835-9fee0d12ded4.webp">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://c.myholidays.com/packages/157b6989-91a7-4389-930a-3eef4e28c0ed/original/5d051920-fa65-469f-a656-f1e64560eaf5.webp">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/09/Best-Places-to-Visit-in-Andaman.jpg">
+                <div class="name">
+                     
+                </div>
+            </div> 
+            <div class="card" >
+                <img src="https://www.holidify.com/images/bgImages/SOMNATH.jpg">
+                <div class="name">
+                     
+                </div>
+            </div>
+        
+        
+    </section>
+<h2><b>Famous and Visited place in other contury</b></h2>
+    <section class="flex-container sec1">
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-china-great-wall.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d3878bb36e03c348c7cfcd6?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d377bf436e03c29e93eed13?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d38b30636e03c59cb0063c2?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d3776e836e03c01ae25c453?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d377fd436e03c170541f807?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d38c33536e03c120b6d5233?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d3867af36e03c4a363b5c44?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d38bf5536e03c0465428de6?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d3a26d136e03c074c16cc73?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d37715d36e03c3ec304ccd6?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d38bcc136e03c10dd2815b6?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d3896e336e03c548d2a598a?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://i.insider.com/5d38ad7236e03c01a7108a67?width=800&format=jpeg&auto=webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/23632059810_6e6886c0af_b_20190127124439.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-new-york-statue-of-liberty.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-peru-machu-picchu-overview.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-jordan-petra.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-indonesia-borobudur.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/wpimages/2022/02/world-top-rated-tourist-attractions-central-park-new-york-city.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.planetware.com/photos-large/CAM/cambodia-angkor-wat.jpg">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://daytriptips.com/wp-content/uploads/2019/05/louvre-museum-paris.jpg.webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://daytriptips.com/wp-content/uploads/2019/01/new-orleans-jackson-square.jpg.webp">
+            <div class="name">
+                     
+            </div>
+        </div>
+        
+       
+    </section>
+
+<!-- footer -->
+    <!-- <footer>
+        <div class="flex-container">
+      admin@gmail.com
+        </div>
+    </footer> -->
+
+</body>
+</html>

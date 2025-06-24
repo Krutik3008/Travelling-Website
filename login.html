@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+        <title>login page</title>
+        <style>
+            body {
+                margin: 0%;
+                padding: 0%;
+                background-position: center;
+                background-size: cover;
+                font-family: sans-serif;
+                background: url(https://img.freepik.com/free-photo/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand_335224-1356.jpg?size=626&ext=jpg&ga=GA1.1.793707968.1676043740&semt=sph);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                
+            }
+
+            .login {
+                width: 280px;
+                height: 370px;
+                color: azure;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                box-sizing: border-box;
+                padding: 40px 25px;
+                border-radius: 10px;
+                border: solid rgb(19, 133, 214);
+                backdrop-filter: blur(20px);
+            }
+            .login:hover {
+            box-shadow: 0px 0px 20px 20px #ffbb763f;
+            border: 3px solid rgb(19, 133, 214);
+            }
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+                color: #245953;
+            }
+
+            .login h2 {
+                border-radius: 6px;
+                margin: 0%;
+                padding: 2%;
+                font-weight: bold;
+            }
+
+            .login input {
+                width: 100%;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+
+            .login input[type="text"],
+            input[type="password"],
+            hr {
+                border: none;
+                border-bottom: 2px solid aqua;
+                background: transparent;
+                outline: none;
+                height: 20px;
+                font-size: 18px;
+                color: rgb(243, 252, 243);
+
+            }
+
+            .login input[type="submit"] {
+                border: none;
+                outline: none;
+                height: 30px;
+                color: aliceblue;
+                background: rgb(50, 233, 233);
+                font-size: 20px;
+                border-radius: 20px;
+            }
+
+            .login input[type="submit"]:hover {
+                cursor: pointer;
+                background-color: rgb(3, 210, 28);
+                font-weight: italic;
+            }
+
+            .login a {
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FF6000;
+            }
+
+            .login a:hover {
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h2>Login Page</h2>
+            <form method="post" action="file:///C:/Users/KRUTIK/wd%20project/homepage.html" name="login_page" onsubmit="return myfun()">
+                <P> User name </P>
+                <input type="text" name="name" placeholder="Enter user name">
+                <p>Password </p>
+                <input type="password" name="password" placeholder="Enter password">
+                <br>
+                <input type="submit" name="submit" value="Login">
+                <br>
+                <a href="#"><u>Forget password</u></a>
+                <br>
+            </form>
+        </div>
+    </body>
+    <script>
+        function myfun() {
+        let n = document.login_page.name;
+        if (n.value.length == 0) {
+            alert("name is required!");
+            return false;
+        }
+        let password = document.login_page.password;
+        if (password.value.length == 0) {
+            alert("password is required!");
+            return false;
+        }
+    }
+    </script>
+</html>

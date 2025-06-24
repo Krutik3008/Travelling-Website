@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <style type="text/css">
+            body{
+                background: url(https://img.freepik.com/free-photo/fog-dark-clouds-mountains_1204-503.jpg?w=996&t=st=1681385249~exp=1681385849~hmac=eeaeddecb72f0f643acf4ccdc9eaf6d2e21e801fc2ef70b4c8080219fb1e927a);
+                background-position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                width: auto;
+                color: #E7B10A;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            fieldset{
+            text-align: center;
+            font-family: Calibri;
+            font-size: 20px;
+            border: 0px solid black; 
+            width: max-content;
+            padding: 20px;
+            margin: 20px auto;
+            }
+
+            td {
+            padding: 10px;
+
+            }
+
+            .container .box {
+            height: 500px;;
+            width:min-content;
+            padding: 20px;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.074);
+            border: 1px solid rgba(255, 255, 255, 0.222);
+            backdrop-filter: blur(20px);
+            border-radius: .7rem;
+            transition: all ease .3s;
+            }
+
+            .container .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            .container .box:hover {
+            box-shadow: 0px 0px 20px 1px #ffbb763f;
+            border: 1px solid rgba(255, 255, 255, 0.454);
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <fieldset>
+                    <form  action="file:///C:/Users/KRUTIK/wd%20project/homepage.html" name="reg_form" onsubmit="return Forms()">
+                        <h2>Registration Form</h2>
+                        <table>
+                            <tr>
+                                <td><label><b>First Name:-</b> </label></td>
+                                <td>
+                                    <input type="text" name="fname" placeholder="First Name" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Last Name:-</b> </label></td>
+                                <td>
+                                    <input type="text" name="lname" placeholder="last name" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Email Id:-</b> </label></td>
+                                <td>
+                                    <input type="email" name="email" placeholder="example@gmail.com">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Password:-</b></label></td>
+                                <td>
+                                    <input type="password"  name="password" placeholder="Password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Confirm Password:-</b></label></td>
+                                <td>
+                                    <input type="password" name="confirm-password" placeholder="confirm-password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><lable><b>Gender:-</b></lable> </td>
+                                <td>
+                                    <input type="radio" name="gender" >male
+                                    <input type="radio" name="gender" >female
+                                    <input type="radio" name="gender" >other
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Contury:-</b> </label></td>
+                                <td>
+                                    <select name="Contury">
+                                        <option value="Country">Country</option>
+                                        <option value="India">India</option>
+                                        <option value="America">America</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="singapore">singapore</option>
+                                        <option value="new zealand">New zealand</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Birthdate:-</b></td>
+                                <td>
+                                    <input type="date" name="birthdate" placeholder="dd/mm/yyyy">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit"  >
+                                    <input type="reset" name="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </div>   
+    </body>
+    <script>
+        function Forms() {
+        var x = document.forms["reg_form"]["fname"].value;
+        if (x == "" || x == null) {
+            alert("fname is required!");
+            return false;
+        }
+        var x = document.forms["reg_form"]["lname"].value;
+        if (x == "" || x == null) {
+            alert("lname is required!");
+            return false;
+        }
+        var x = document.forms["reg_form"]["email"].value;
+        if (x == "" || x == null) {
+            alert("email is required!");
+            return false;
+        }
+        var x = document.forms["reg_form"]["password"].value;
+        if (x == "" || x == null) {
+            alert("password is required!");
+            return false;
+        }
+        var x = document.forms["reg_form"]["gender"].value;
+        if (x == "" || x == null) {
+            alert("Gender is required!");
+            return false;
+        }
+    }
+    </script>
+</html>
